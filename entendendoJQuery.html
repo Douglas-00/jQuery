@@ -14,6 +14,28 @@
     <div>2</div>
 
     <script>
-        // ...
+        //hide faz sumir os elementos(timer)
+        // show faz aparecer (timer)
+        //fadeOut Faz sumir o elemento devagar(timer)
+       $('div').hide(5000).show(5000)
+       console.log($('div').get(0))
+       //isEmptyObject Verifica se o objeto está vazio :
+       // resultado no console vai ser TRUE
+       console.log($.isEmptyObject({}))
+       //----------------------------------------------
+        //Resultado será False, pois existe objeto 
+       console.log($.isEmptyObject({nome:null}))
+       //----------------------------------------------
+       //inArray verifica se determinado numero está dentro do array
+       console.log(jQuery.inArray(3,[1,2,3]))
+
+       //----------------------------------------------
+       //Criando plugins no css :fcailmente com jquery
+       $.fn.fundoverde = function(){
+           this.css('background-color','green')
+           return this
+       }
+       $('body').fundoverde().fadeOut(1000)
+       
     </script>
 </body>

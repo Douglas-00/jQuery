@@ -17,6 +17,27 @@
     <p class='numero'>5</p>
 
     <script>
-        // ...
+        //append preeche o elemento
+        $('div1').append(', 2')
+        //prepend antes de tudo
+        $('#div1').prepend('0, ')
+        $('#div1').append(', 3')
+        //before antes
+        $('#div2').before('<p>Antes 2 </p>')
+
+        //after depois
+
+        $('#div2').after('<p>Depois</p>')
+
+        $('<p>Antes 3 </p>').insertBefore('#div3')
+        $('<p>Depois 3 </p>').insertAfter('#div3')
+
+        $('p.numero').wrap('<div>')
+        $('p.numero').wrapAll('<div id="div4"')
+        //empty limpa a div
+        $('#div4').empty()
+
+        $('body > p').replaceWith('<div>Substituto</div>')
+
     </script>
 </body>

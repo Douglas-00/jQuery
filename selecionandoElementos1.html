@@ -49,6 +49,41 @@
     </form>
 
     <script>
-        // ...
+        //add class adiciona um destaque e remove class - remove o destaque e encadeando a funcao
+        $('#feira').addClass('destaque').removeClass('destaque')
+        $('li').addClass('destaque')
+        $('[wm-obrigatorio]').removeClass('destaque')
+        $('li.opcional').removeClass('destaque')
+        $('div p span').addClass('destaque')
+
+        //Exclusivo jQuery
+        //first Vamos adicionar no primeiro li na div a borda verde
+        $('li:first').css('border',' 3px solid green')
+        //odd Vamos adicionar nos numeros impares
+        $('li:odd').css('border',' 3px solid blue')
+        //gt Apartir de um elemento selecionado "indicado()"
+        $('li:gt(1)').css('border','5px solid black')
+        //not modificando os elementos antes do ultimo
+        $('li:not(:last)').css('border','none')
+        //filtro contains neste exemplo:
+        // vou preencher o fundo com os li que contem a letra "r"
+        $('li:contains("r")').css('background-color','black')
+        //-----------------------------------------------------
+        //fazendio sumir os forms
+        //$('form *').hide()
+        
+        
+        //fazendo aparecer os forms de acordo com seu type
+        
+        
+        
+
+
+        
+        
+
+
+
+
     </script>
 </body>
